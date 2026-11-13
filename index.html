@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEMINARIOS III</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<!-- Acessibilidade em Libras -->
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+</div>
+
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
+<script>
+    new window.VLibras.Widget(
+        'https://vlibras.gov.br/app'
+    );
+</script>
+<header class="topbar">
+    <div class="brand">
+        <img src="logo.png"
+             alt="Logo da PUC Minas"
+             class="logo-puc">
+
+        <div class="brand-text">
+            <span class="project-name">
+                TESTE DE PERSONALIDADE
+            </span>
+
+            <span class="project-subtitle">
+                EM LIBRAS
+            </span>
+        </div>
+    </div>
+
+    <span class="header-label">
+        AUTOCONHECIMENTO E INCLUSÃO
+    </span>
+</header>
+
+
+<main class="container">
+
+
+<section class="intro" id="intro">
+
+    <div class="intro-decoration">✧</div>
+
+    <span class="eyebrow">
+        PUC MINAS POÇOS DE CALDAS
+    </span>
+
+    <h1>
+        Trabalho Acadêmico<br>
+        <span> Seminários III</span>
+    </h1>
+
+    <p>
+        Responda às perguntas e descubra qual perfil
+        combina mais com você.
+    </p>
+
+    <div class="info-pills">
+        <span>✦ 10 perguntas</span>
+        <span>✦ 6 personalidades</span>
+        <span>✦ Acessibilidade em Libras</span>
+    </div>
+
+    <button class="primary-button" id="start">
+        COMEÇAR MEU TESTE ↗
+    </button>
+
+    <p class="intro-note">
+        Não existem respostas certas ou erradas.
+        Responda de acordo com quem você é!
+    </p>
+
+</section>
+    
+
+    <section class="quiz-card" id="quiz" hidden>
+        <div class="quiz-header">
+            <span class="eyebrow">SUA DESCOBERTA</span>
+            <span id="counter">PERGUNTA 01 DE 10</span>
+        </div>
+
+        <div class="progress-track">
+            <div class="progress-fill" id="progress"></div>
+        </div>
+
+        <div id="question-content"></div>
+
+        <div class="quiz-navigation">
+            <button class="secondary-button" id="previous">
+                ← VOLTAR
+            </button>
+
+            <button class="primary-button" id="next">
+                PRÓXIMA →
+            </button>
+
+            <button class="primary-button" id="finish" hidden>
+                DESCOBRIR MEU PERFIL ✧
+            </button>
+        </div>
+    </section>
+
+    <section class="result-card" id="result" hidden>
+        <div class="result-symbol">✧</div>
+
+        <span class="eyebrow">SUA DESCOBERTA</span>
+
+        <h1>Você é...</h1>
+
+        <h2 class="result-name" id="result-name"></h2>
+
+        <p class="result-description" id="result-description"></p>
+
+        <div class="characteristics">
+            <h3>Suas principais características</h3>
+            <div class="tags" id="result-tags"></div>
+        </div>
+
+        <div class="result-message" id="result-message"></div>
+
+        <div class="score-area">
+            <h3>Distribuição das suas respostas</h3>
+            <div id="score-list"></div>
+        </div>
+
+        <button class="primary-button" id="restart">
+            FAZER O TESTE NOVAMENTE ↗
+        </button>
+
+        <p class="disclaimer">
+            Este teste é uma experiência de autoconhecimento
+            e entretenimento, não constituindo diagnóstico
+            psicológico.
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    <p>SEMINARIOS III © 2026 — Teste de Personalidade em Livbras</p>
+</footer>
+
+</body>
+</html>
